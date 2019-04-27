@@ -3,7 +3,8 @@ body {
     background: #151120;
     overflow-x: hidden;
     scroll-behavior: smooth;
-
+    padding: none !important;
+    margin: none !important;
 }
 
 body {
@@ -11,6 +12,8 @@ body {
     background-repeat: repeat;
     background-size: 25vh;
     animation: moveBG 80s linear infinite;
+    width: 100vw;
+    height: 98vh;
 }
 
 @keyframes moveBG {
@@ -39,7 +42,9 @@ p {
     font-size: 1.5vh;
     line-height: 1.9vh;
 }
-
+a {
+    font-size: 1.5vh;
+}
 .heading {
     width: 40vh;
     float: middle;
@@ -48,6 +53,7 @@ p {
 .sbtn {
     display: inline-block;
     margin-right: 1.5vh;
+    color: white;
 }
 
 .btn {
@@ -57,7 +63,6 @@ p {
     padding: .9vh 1.3vh;
     border-radius: 5vh;
     transition: all .3s;
-    font-size: 1.3vh;
 }
 
 .btn:hover {
@@ -120,4 +125,39 @@ p {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #740b7a;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: left;
+    margin-top: 4.6vh;
+}
+
+li a {
+    color: #a40aa9 !important;
+    text-decoration: none;
+    font-size: 1.7vh;
+}
+
+li a:hover {
+    color: #FF00D2 !important;
+    text-shadow: 0 0 20px rgba(255, 0, 210, .5);
+    transition: color .3s;
+}
+
+li a.active {
+    color: #FF00D2 !important;
+    text-shadow: 0 0 20px rgba(255, 0, 210, .5);
+}
+
+.pkprice {
+    color: white;
+    font-size: 1.5vh;
+    text-align: left;
+}
+th, td {
+    padding: 1.5vh;
 }
